@@ -2,7 +2,7 @@ services:
   jenkins:
     image: jenkins/jenkins # :latest (weekly), :lts
     ports:
-      - "8080:8080"
+      - "8090:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
     restart: unless-stopped
