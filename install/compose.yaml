@@ -11,3 +11,4 @@ volumes:
   jenkins_home:
 
 # FYI https://www.jenkins.io/doc/book/installing/docker/
+# jenkins/jenkins image repo: https://github.com/jenkinsci/docker

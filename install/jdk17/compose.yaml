@@ -13,3 +13,4 @@ volumes:
 
 # FYI JAVA 17 support:
 # - https://www.jenkins.io/blog/2022/03/21/java17-preview-availability/
+# - Java 17 support ticket (pending): https://issues.jenkins.io/browse/JENKINS-67908
