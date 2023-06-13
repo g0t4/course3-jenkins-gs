@@ -1,13 +1,15 @@
 services:
   jenkins:
-    image: jenkins/jenkins # :latest (weekly), :lts
+    image: jenkins/jenkins:jdk17 # :jdk17 (weekly), :lts-jdk17     # :jdk11 (weekly), :lts-jdk11
     ports:
-      - "8090:8080"
+      - "8017:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
     restart: unless-stopped
 
 volumes:
   jenkins_home:
+    # FYI will be named jdk17_jenkins_home
 
-# FYI https://www.jenkins.io/doc/book/installing/docker/
+# FYI JAVA 17 support:
+# - https://www.jenkins.io/blog/2022/03/21/java17-preview-availability/
