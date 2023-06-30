@@ -11,6 +11,7 @@ services:
     restart: unless-stopped
   mailhog:
     image: mailhog/mailhog
+    platform: linux/amd64
     ports:
       - "8091:8025" # web UI
     restart: unless-stopped
