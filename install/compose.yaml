@@ -9,6 +9,11 @@ services:
       - jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock # for DooD
     restart: unless-stopped
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8091:8025" # web UI
+    restart: unless-stopped
 
 volumes:
   jenkins_home:
