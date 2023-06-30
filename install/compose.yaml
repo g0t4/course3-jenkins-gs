@@ -5,6 +5,7 @@ services:
       context: .
     ports:
       - "8090:8080"
+      - "127.0.0.1:2222:2222"
     volumes:
       - jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock # for DooD
