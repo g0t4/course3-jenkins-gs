@@ -14,7 +14,6 @@
 ## Jenkins CLI
 
 ```bash
-
 # alias sweeps args under a rug:
 alias jcli="java -jar $HOME/Downloads/jenkins-cli.jar -s http://jenkins:8080/ -auth @$HOME/Downloads/creds"
 
@@ -22,8 +21,6 @@ jcli help
 jcli list-jobs
 jcli install-plugin -restart pipeline-graph-view
 jcli build foo
-
-
 ```
 
 - docs:
