@@ -20,7 +20,10 @@ alias jcli="java -jar $HOME/Downloads/jenkins-cli.jar -s http://jenkins:8080/ -a
 jcli help
 jcli list-jobs
 jcli install-plugin -restart pipeline-graph-view
-jcli build foo
+
+jcli build foo -s -v
+# -s = wait for job to complete, and Ctrl+C aborts job
+# -v = follow (tail) console output
 ```
 
 - docs:
