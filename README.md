@@ -24,6 +24,7 @@ jcli install-plugin -restart pipeline-graph-view
 jcli build foo -s -v
 # -s = wait for job to complete, and Ctrl+C aborts job
 # -v = follow (tail) console output
+jenkins help build     # FYI get subcommand help
 ```
 
 - docs:
