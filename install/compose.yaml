@@ -2,12 +2,12 @@ services:
   jenkins:
     image: jenkins/jenkins # :latest (weekly), :lts
     ports:
-      - "8080:8080"
+      - "127.0.0.1:8080:8080" # drop 127.0.0.1: if you want remote access to Jenkins
     volumes:
-      - jenkins_home:/var/jenkins_home
-    restart: unless-stopped
+      - jenkins_home:/var/jenkins_home # persist data across container recreation, updating image, etc
+    restart: unless-stopped # when you instruct Jenkins to restart this ensures it will start back up, also if your machine reboots when Docker starts back up it will start Jenkins back up too
 
 volumes:
   jenkins_home:
 
-    # FYI https://www.jenkins.io/doc/book/installing/docker/
+# FYI https://www.jenkins.io/doc/book/installing/docker/

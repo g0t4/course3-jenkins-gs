@@ -1,0 +1,20 @@
+services:
+  jenkins:
+    image: jenkins/jenkins
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    restart: unless-stopped
+  email:
+    image: mailhog/mailhog
+    platform: linux/amd64 # for Apple Silicon macs
+    ports:
+      # - "127.0.0.1:1025:1025" # SMTP (when Jenkins and MailHog both run via Docker Compose they share a network, so there is no need to publish a port to your host)
+      - "127.0.0.1:8025:8025" # web UI
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:
+
+# FYI https://www.jenkins.io/doc/book/installing/docker/
