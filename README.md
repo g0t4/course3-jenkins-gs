@@ -1,5 +1,9 @@
 # Getting Started with Jenkins (3rd Edition)
 
+## Sample Repo
+
+- `spring-petclinic` fork [g0t4/course3-jenkins-gs-spring-petclinic](//github.com/g0t4/course3-jenkins-gs-spring-petclinic)
+
 ## Demos
 
 - Use [install](./install/compose.yaml) to run only Jenkins in a container.
