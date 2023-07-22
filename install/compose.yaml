@@ -1,6 +1,6 @@
 services:
   jenkins:
-    image: jenkins/jenkins # :latest (weekly), :lts
+    image: jenkins/jenkins # :latest (weekly), :lts, :jdk17, :jdk11, :lts-jdk17, etc
     ports:
       - "127.0.0.1:8080:8080" # drop 127.0.0.1: if you want remote access to Jenkins
     volumes:
