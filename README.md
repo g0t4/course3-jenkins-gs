@@ -3,6 +3,8 @@
 ## Sample Repo
 
 - `spring-petclinic` fork [g0t4/course3-jenkins-gs-spring-petclinic](//github.com/g0t4/course3-jenkins-gs-spring-petclinic)
+  - `main` and `start-of-course` mark the start of the course
+  - `end-of-course` marks the last commit from the course
 
 ## Demos
 
